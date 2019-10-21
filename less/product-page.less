@@ -10,6 +10,10 @@
 
     .productStepContainer {
         .flex(row, space-evenly, center);
+
+        @media @mobile {
+            .flex(column, center, center);
+        }
     }
 
         .productStep {
@@ -18,5 +22,14 @@
             text-align: center;
             margin: 0% 2%;
             padding: 2% 2%;
+
+            @media @mobile {
+                margin: 2% 0%;
+            }
+
+            i {
+                font-size: 8rem;
+                margin-bottom: 10%;
+            }
         }
 }

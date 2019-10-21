@@ -12,15 +12,30 @@
     .teamMemberContainer {
         .flex(row, space-evenly, center);
         flex-wrap: wrap;
+
+        @media @mobile {
+            .flex(column, center, center);
+        }
     }
 
         .memberImage {
             border-radius: 50%;
             margin-bottom: 5%;
+            width: 150px;
+            height: 150px;
+
+            @media @mobile {
+                width: 300px;
+                height: 300px;
+            }
         }
         .member {
             text-align: center;
             margin: 0% 2%;
             padding: 2% 2%;
+
+            @media @mobile {
+                margin: 2% 0%;
+            }
         }
 }
