@@ -1,0 +1,22 @@
+// Mixins
+
+.buttonDesign(@bgColor: #008080, @txtColor: white) {
+    background-color: @bgColor;
+    color: @txtColor;
+}
+
+.flex(@direction, @justify, @align) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.lockNavBar() {
+    position: fixed;
+    top: 0;
+    background-color: #F4F4F4;
+    z-index: 9999;
+    width: 100%;
+    opacity: 0.9;
+}
