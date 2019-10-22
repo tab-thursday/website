@@ -192,7 +192,7 @@ p {
 .navContainer nav {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   margin-top: 1%;
 }
@@ -217,8 +217,8 @@ p {
 }
 .navContainer nav .navItemContainer a:hover {
   background-color: lightslategrey;
-  border-radius: 5px;
   color: white;
+  border-radius: 5px;
 }
 header {
   text-align: center;
