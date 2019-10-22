@@ -333,8 +333,8 @@ header .btn:hover a {
 .teamContainer .memberImage {
   border-radius: 50%;
   margin-bottom: 5%;
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
 }
 @media (max-width:500px) {
   .teamContainer .memberImage {
@@ -351,6 +351,94 @@ header .btn:hover a {
   .teamContainer .member {
     margin: 2% 0%;
   }
+}
+.teamContainer .member:hover {
+  transform: scale(1.1);
+}
+.contactContainer {
+  border-top: 2px solid grey;
+  margin: 5% 0%;
+  padding-top: 5%;
+}
+.contactContainer h2 {
+  text-align: center;
+}
+.contactContainer .conInfo1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2%;
+  width: 80%;
+  margin: 0% 10%;
+  margin-bottom: 3%;
+}
+.contactContainer .conInfo1 .conName {
+  margin-right: 5%;
+}
+.contactContainer .conInfo1 #name {
+  width: 100%;
+  height: 5rem;
+  border-radius: 6px;
+  font-size: 3rem;
+  padding: 1.5%;
+  border-style: solid;
+}
+.contactContainer .conInfo1 #email {
+  width: 100%;
+  height: 5rem;
+  border-radius: 6px;
+  font-size: 3rem;
+  padding: 1.5%;
+  border-style: solid;
+}
+.contactContainer .conInfo1 h5 {
+  margin-bottom: 3%;
+}
+.contactContainer .conInfo2 {
+  text-align: center;
+}
+.contactContainer .conInfo2 h5 {
+  margin-bottom: 2%;
+}
+.contactContainer .conInfo2 #subject {
+  width: 80%;
+  height: 15rem;
+  border-radius: 6px;
+  font-size: 3rem;
+  padding: 1.5%;
+}
+.contactContainer .btn {
+  background-color: #22283A;
+  color: white;
+  text-align: center;
+  padding: 8px 0px;
+  margin-top: 5%;
+  border-radius: 5px;
+  font-size: 1.9rem;
+  width: 150px;
+  border: 2px solid #22283A;
+}
+@media (max-width:500px) {
+  .contactContainer .btn {
+    width: 100%;
+  }
+}
+.contactContainer .btn a {
+  text-decoration: none;
+  background-color: #22283A;
+  color: white;
+}
+.contactContainer .btn:hover {
+  background-color: white;
+  color: #22283A;
+  animation: shadow-pulse 1s infinite;
+}
+.contactContainer .btn:hover a {
+  text-decoration: none;
+  background-color: white;
+  color: #22283A;
 }
 footer .socialIcons {
   display: flex;
