@@ -3,6 +3,11 @@ header {
     // max-width: 600px;
     // border: 2px solid red;
 
+    .introImage {
+        width: 100%;
+        margin-top: 3%;
+    }
+
     .intro {
         margin: 3% 10%;
         .flex(column, center, center);
@@ -21,5 +26,21 @@ header {
          @media @mobile {
              width: 100%;
          }
+
+            a {
+                text-decoration: none;
+                .buttonDesign(#22283A, white);
+            }
+
+            &:hover {
+            .buttonDesign(white, #22283A);
+            animation: shadow-pulse 1s infinite;
+
+            a {
+                text-decoration: none;
+                .buttonDesign(white, #22283A);
+
+            }
+        }
     }
 }

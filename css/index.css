@@ -1,3 +1,11 @@
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -202,12 +210,22 @@ p {
 }
 .navContainer nav .navItemContainer a {
   font-size: 1.6rem;
-  padding: 4% 0%;
+  padding: 3% 5%;
+  margin-top: 2%;
   text-decoration: none;
   color: black;
 }
+.navContainer nav .navItemContainer a:hover {
+  background-color: lightslategrey;
+  border-radius: 5px;
+  color: white;
+}
 header {
   text-align: center;
+}
+header .introImage {
+  width: 100%;
+  margin-top: 3%;
 }
 header .intro {
   margin: 3% 10%;
@@ -231,6 +249,21 @@ header .btn {
   header .btn {
     width: 100%;
   }
+}
+header .btn a {
+  text-decoration: none;
+  background-color: #22283A;
+  color: white;
+}
+header .btn:hover {
+  background-color: white;
+  color: #22283A;
+  animation: shadow-pulse 1s infinite;
+}
+header .btn:hover a {
+  text-decoration: none;
+  background-color: white;
+  color: #22283A;
 }
 .productContainer {
   border-top: 2px solid grey;
