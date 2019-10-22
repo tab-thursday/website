@@ -144,15 +144,15 @@ html {
 html,
 body {
   font-family: 'Noto Serif TC', serif;
-  color: black;
+  color: #22283A;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
-  color: black;
+  font-family: 'Noto Serif TC', serif;
+  color: #22283A;
 }
 h1 {
   font-size: 4rem;
@@ -184,7 +184,7 @@ p {
 .navContainer {
   position: fixed;
   top: 0;
-  background-color: #F4F4F4;
+  background-color: #F0F8FF;
   z-index: 9999;
   width: 100%;
   opacity: 0.9;
@@ -213,11 +213,11 @@ p {
   padding: 3% 5%;
   margin-top: 2%;
   text-decoration: none;
-  color: black;
+  color: #22283A;
 }
 .navContainer nav .navItemContainer a:hover {
   background-color: lightslategrey;
-  color: white;
+  color: #FFFAFA;
   border-radius: 5px;
 }
 header {
@@ -236,7 +236,7 @@ header .intro {
 }
 header .btn {
   background-color: #22283A;
-  color: white;
+  color: #FFFAFA;
   text-align: center;
   padding: 8px 0px;
   margin-top: 5%;
@@ -253,16 +253,16 @@ header .btn {
 header .btn a {
   text-decoration: none;
   background-color: #22283A;
-  color: white;
+  color: #FFFAFA;
 }
 header .btn:hover {
-  background-color: white;
+  background-color: #FFFAFA;
   color: #22283A;
   animation: shadow-pulse 1s infinite;
 }
 header .btn:hover a {
   text-decoration: none;
-  background-color: white;
+  background-color: #FFFAFA;
   color: #22283A;
 }
 .productContainer {
@@ -301,7 +301,7 @@ header .btn:hover a {
   }
 }
 .productContainer .productStep {
-  border: 2px solid grey;
+  border: 2px solid #DCDCDC;
   border-radius: 5px;
   text-align: center;
   margin: 0% 2%;
@@ -315,6 +315,7 @@ header .btn:hover a {
 .productContainer .productStep i {
   font-size: 8rem;
   margin-bottom: 10%;
+  color: #22283A;
 }
 .teamContainer {
   border-top: 2px solid #DCDCDC;
@@ -364,6 +365,9 @@ header .btn:hover a {
     height: 300px;
   }
 }
+.teamContainer .memberImage:hover {
+  transform: scale(1.1);
+}
 .teamContainer .member {
   text-align: center;
   margin: 0% 2%;
@@ -374,8 +378,22 @@ header .btn:hover a {
     margin: 2% 0%;
   }
 }
-.teamContainer .member:hover {
-  transform: scale(1.1);
+.teamContainer .member .socialIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  font-size: 3rem;
+  margin: 4% 20% 0% 20%;
+}
+@media (max-width:500px) {
+  .teamContainer .member .socialIcons {
+    margin: 4% 30% 0% 30%;
+  }
+}
+.teamContainer .member .socialIcons a {
+  text-decoration: none;
+  color: #22283A;
 }
 .contactContainer {
   border-top: 2px solid #DCDCDC;
@@ -531,7 +549,10 @@ footer .socialIcons {
 }
 footer .socialIcons a {
   text-decoration: none;
-  color: black;
+  color: #22283A;
+}
+footer .socialIcons a:hover {
+  transform: scale(1.5);
 }
 footer p {
   text-align: center;
