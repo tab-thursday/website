@@ -1,8 +1,16 @@
 .contactContainer {
     .borderStyle();
 
+    @media @mobile {
+        margin: 5% 5%;
+    }
+
     h2 {
         text-align: center;
+
+        @media @mobile {
+            margin-bottom: 4%;
+        }
     }
 
     .conInfo1 {
@@ -13,62 +21,72 @@
         margin: 0% 10%;
         margin-bottom: 3%;
 
+        @media @mobile {
+            .flex(column, center, center);
+        }
+
         .conName {
-            margin-right: 5%;
+            margin-right: 2.5%;
+
+            @media @mobile {
+                margin-right: 0%;
+            }
+
+            h5 {
+                margin-bottom: 3%;
+            }
+
+            #name {
+                width: 100%;
+                height: 5rem;
+                border-radius: 6px;
+                font-size: 3rem;
+                padding: 1.5%;
+                border-style: solid;
+                border: 1px solid @contactFormBorders;
+
+                &:focus {
+                    .borderContactStyle();
+                }
+            }
         }
 
-        #name {
-            width: 100%;
-            height: 5rem;
-            border-radius: 6px;
-            font-size: 3rem;
-            padding: 1.5%;
-            border-style: solid;
+        .conEmail {
+            margin-left: 2.5%;
+
+            @media @mobile {
+                margin-left: 0%;
+            }
+
+            h5 {
+                margin-bottom: 3%;
+
+                @media @mobile {
+                    margin-top: 3%;
+                }
+            }
+
+            #email {
+                width: 100%;
+                height: 5rem;
+                border-radius: 6px;
+                font-size: 3rem;
+                padding: 1.5%;
+                border-style: solid;
+                border: 1px solid @contactFormBorders;
+
+                &:focus {
+                    .borderContactStyle();
+                }
+            }
         }
-
-        #email {
-            width: 100%;
-            height: 5rem;
-            border-radius: 6px;
-            font-size: 3rem;
-            padding: 1.5%;
-            border-style: solid;
-        }
-
-        // .conName {
-        //     border: 2px solid red;
-        //     // width: 100%;
-        // }
-
-        h5 {
-            margin-bottom: 3%;
-        }
-
-        // #name {
-        //     border-style: solid;
-        //     border: 1px solid grey;
-        //     border-radius: 5px;
-        //     width: 400px;
-        //     height: 40px;
-        //     font-size: 2rem;
-        // }
-
-        // #email {
-        //     border-style: solid;
-        //     border: 1px solid grey;
-        //     border-radius: 5px;
-        //     width: 400px;
-        //     height: 40px;
-        //     font-size: 2rem;
-        // }
     }
 
     .conInfo2 {
         text-align: center;
-        // margin: 3% 0%;
 
         h5 {
-            margin-bottom: 2%;
+            margin-bottom: 3%;
         }
 
         #subject {
@@ -77,36 +95,45 @@
             border-radius: 6px;
             font-size: 3rem;
             padding: 1.5%;
+            border: 1px solid @contactFormBorders;
+
+            &:focus {
+                .borderContactStyle();
+            }
         }
     }
 
-    .btn {
-        .buttonDesign(#22283A, white);
-         text-align: center;
-         padding: 8px 0px;
-         margin-top: 5%;
-         border-radius: 5px;
-         font-size: 1.9rem;
-         width: 150px;
-         border: 2px solid #22283A;
+    .sendButtonContainer {
+        text-align: center;
 
-         @media @mobile {
-             width: 100%;
-         }
-
-            a {
-                text-decoration: none;
-                .buttonDesign(#22283A, white);
-            }
-
-            &:hover {
-            .buttonDesign(white, #22283A);
-            animation: shadow-pulse 1s infinite;
-
-            a {
-                text-decoration: none;
+        #sendButton {
+            .buttonDesign(#22283A, white);
+             text-align: center;
+             padding: 8px 0px;
+             margin-top: 5%;
+             border-radius: 5px;
+             font-size: 1.9rem;
+             width: 150px;
+             border: 2px solid #22283A;
+    
+             @media @mobile {
+                 width: 100%;
+             }
+    
+                a {
+                    text-decoration: none;
+                    .buttonDesign(#22283A, white);
+                }
+    
+                &:hover {
                 .buttonDesign(white, #22283A);
-
+                animation: shadow-pulse 1s infinite;
+    
+                a {
+                    text-decoration: none;
+                    .buttonDesign(white, #22283A);
+    
+                }
             }
         }
     }

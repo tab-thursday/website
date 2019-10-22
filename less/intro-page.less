@@ -14,7 +14,7 @@ header {
     }
 
     .btn {
-        .buttonDesign(#22283A, white);
+        .buttonDesign(@buttonBackgroundColor, @buttonFontColor);
          text-align: center;
          padding: 8px 0px;
          margin-top: 5%;
@@ -29,16 +29,16 @@ header {
 
             a {
                 text-decoration: none;
-                .buttonDesign(#22283A, white);
+                .buttonDesign(@buttonBackgroundColor, @buttonFontColor);
             }
 
             &:hover {
-            .buttonDesign(white, #22283A);
+            .buttonDesign(@buttonFontColor, @buttonBackgroundColor);
             animation: shadow-pulse 1s infinite;
 
             a {
                 text-decoration: none;
-                .buttonDesign(white, #22283A);
+                .buttonDesign(@buttonFontColor, @buttonBackgroundColor);
 
             }
         }

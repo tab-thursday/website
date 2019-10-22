@@ -143,7 +143,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Noto Serif TC', serif;
   color: black;
 }
 h1,
@@ -266,14 +266,25 @@ header .btn:hover a {
   color: #22283A;
 }
 .productContainer {
-  border-top: 2px solid grey;
+  border-top: 2px solid #DCDCDC;
   margin: 5% 0%;
   padding-top: 5%;
+}
+@media (max-width:500px) {
+  .productContainer {
+    margin: 5% 5%;
+  }
 }
 .productContainer .product {
   text-align: center;
   margin: 0% 10%;
   margin-bottom: 5%;
+}
+@media (max-width:500px) {
+  .productContainer .product {
+    margin: 0% 4%;
+    margin-bottom: 5%;
+  }
 }
 .productContainer .productStepContainer {
   display: flex;
@@ -306,14 +317,25 @@ header .btn:hover a {
   margin-bottom: 10%;
 }
 .teamContainer {
-  border-top: 2px solid grey;
+  border-top: 2px solid #DCDCDC;
   margin: 5% 0%;
   padding-top: 5%;
+}
+@media (max-width:500px) {
+  .teamContainer {
+    margin: 5% 5%;
+  }
 }
 .teamContainer .team {
   text-align: center;
   margin: 0% 10%;
   margin-bottom: 5%;
+}
+@media (max-width:500px) {
+  .teamContainer .team {
+    margin: 0% 4%;
+    margin-bottom: 5%;
+  }
 }
 .teamContainer .teamMemberContainer {
   display: flex;
@@ -356,12 +378,22 @@ header .btn:hover a {
   transform: scale(1.1);
 }
 .contactContainer {
-  border-top: 2px solid grey;
+  border-top: 2px solid #DCDCDC;
   margin: 5% 0%;
   padding-top: 5%;
 }
+@media (max-width:500px) {
+  .contactContainer {
+    margin: 5% 5%;
+  }
+}
 .contactContainer h2 {
   text-align: center;
+}
+@media (max-width:500px) {
+  .contactContainer h2 {
+    margin-bottom: 4%;
+  }
 }
 .contactContainer .conInfo1 {
   display: flex;
@@ -374,33 +406,72 @@ header .btn:hover a {
   margin: 0% 10%;
   margin-bottom: 3%;
 }
+@media (max-width:500px) {
+  .contactContainer .conInfo1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .contactContainer .conInfo1 .conName {
-  margin-right: 5%;
+  margin-right: 2.5%;
 }
-.contactContainer .conInfo1 #name {
-  width: 100%;
-  height: 5rem;
-  border-radius: 6px;
-  font-size: 3rem;
-  padding: 1.5%;
-  border-style: solid;
+@media (max-width:500px) {
+  .contactContainer .conInfo1 .conName {
+    margin-right: 0%;
+  }
 }
-.contactContainer .conInfo1 #email {
-  width: 100%;
-  height: 5rem;
-  border-radius: 6px;
-  font-size: 3rem;
-  padding: 1.5%;
-  border-style: solid;
-}
-.contactContainer .conInfo1 h5 {
+.contactContainer .conInfo1 .conName h5 {
   margin-bottom: 3%;
+}
+.contactContainer .conInfo1 .conName #name {
+  width: 100%;
+  height: 5rem;
+  border-radius: 6px;
+  font-size: 3rem;
+  padding: 1.5%;
+  border-style: solid;
+  border: 1px solid #C0C0C0;
+}
+.contactContainer .conInfo1 .conName #name:focus {
+  outline: none;
+  border: 2px solid #20B2AA;
+}
+.contactContainer .conInfo1 .conEmail {
+  margin-left: 2.5%;
+}
+@media (max-width:500px) {
+  .contactContainer .conInfo1 .conEmail {
+    margin-left: 0%;
+  }
+}
+.contactContainer .conInfo1 .conEmail h5 {
+  margin-bottom: 3%;
+}
+@media (max-width:500px) {
+  .contactContainer .conInfo1 .conEmail h5 {
+    margin-top: 3%;
+  }
+}
+.contactContainer .conInfo1 .conEmail #email {
+  width: 100%;
+  height: 5rem;
+  border-radius: 6px;
+  font-size: 3rem;
+  padding: 1.5%;
+  border-style: solid;
+  border: 1px solid #C0C0C0;
+}
+.contactContainer .conInfo1 .conEmail #email:focus {
+  outline: none;
+  border: 2px solid #20B2AA;
 }
 .contactContainer .conInfo2 {
   text-align: center;
 }
 .contactContainer .conInfo2 h5 {
-  margin-bottom: 2%;
+  margin-bottom: 3%;
 }
 .contactContainer .conInfo2 #subject {
   width: 80%;
@@ -408,8 +479,16 @@ header .btn:hover a {
   border-radius: 6px;
   font-size: 3rem;
   padding: 1.5%;
+  border: 1px solid #C0C0C0;
 }
-.contactContainer .btn {
+.contactContainer .conInfo2 #subject:focus {
+  outline: none;
+  border: 2px solid #20B2AA;
+}
+.contactContainer .sendButtonContainer {
+  text-align: center;
+}
+.contactContainer .sendButtonContainer #sendButton {
   background-color: #22283A;
   color: white;
   text-align: center;
@@ -421,21 +500,21 @@ header .btn:hover a {
   border: 2px solid #22283A;
 }
 @media (max-width:500px) {
-  .contactContainer .btn {
+  .contactContainer .sendButtonContainer #sendButton {
     width: 100%;
   }
 }
-.contactContainer .btn a {
+.contactContainer .sendButtonContainer #sendButton a {
   text-decoration: none;
   background-color: #22283A;
   color: white;
 }
-.contactContainer .btn:hover {
+.contactContainer .sendButtonContainer #sendButton:hover {
   background-color: white;
   color: #22283A;
   animation: shadow-pulse 1s infinite;
 }
-.contactContainer .btn:hover a {
+.contactContainer .sendButtonContainer #sendButton:hover a {
   text-decoration: none;
   background-color: white;
   color: #22283A;
@@ -445,7 +524,7 @@ footer .socialIcons {
   flex-direction: row;
   justify-content: space-around;
   align-items: baseline;
-  border-top: 2px solid grey;
+  border-top: 2px solid #DCDCDC;
   margin: 5% 0%;
   padding-top: 5%;
   font-size: 5rem;
