@@ -161,9 +161,19 @@ h2 {
   font-size: 3.2rem;
   padding-bottom: 3%;
 }
+@media (max-width:500px) {
+  h2 {
+    padding-bottom: 7%;
+  }
+}
 h3 {
   font-size: 2.8rem;
   padding-bottom: 10%;
+}
+@media (max-width:500px) {
+  h3 {
+    padding-bottom: 5%;
+  }
 }
 h4 {
   font-size: 2.2rem;
@@ -234,12 +244,15 @@ header .intro {
   justify-content: center;
   align-items: center;
 }
+header .intro p {
+  margin-bottom: 2%;
+}
 header .btn {
   background-color: #22283A;
   color: #FFFAFA;
   text-align: center;
   padding: 8px 0px;
-  margin-top: 5%;
+  margin-top: 3%;
   border-radius: 5px;
   font-size: 1.9rem;
   width: 150px;
@@ -306,6 +319,7 @@ header .btn:hover a {
   text-align: center;
   margin: 0% 2%;
   padding: 2% 2%;
+  width: 100%;
 }
 @media (max-width:500px) {
   .productContainer .productStep {
@@ -316,6 +330,11 @@ header .btn:hover a {
   font-size: 8rem;
   margin-bottom: 10%;
   color: #22283A;
+}
+@media (max-width:500px) {
+  .productContainer .productStep i {
+    margin-bottom: 4%;
+  }
 }
 .teamContainer {
   border-top: 2px solid #DCDCDC;
