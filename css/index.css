@@ -213,9 +213,14 @@ p {
   align-items: center;
   width: 35%;
 }
+@media (max-width:800px) {
+  .navContainer nav .navItemContainer {
+    width: 62%;
+  }
+}
 @media (max-width:500px) {
   .navContainer nav .navItemContainer {
-    width: 100%;
+    width: 98%;
   }
 }
 .navContainer nav .navItemContainer a {
@@ -237,9 +242,9 @@ header .introImage {
   width: 100%;
   margin-top: 3%;
 }
-@media `'(max-width:800px' {
+@media (max-width:800px) {
   header .introImage {
-    margin-top: 100%;
+    margin-top: 1%;
   }
 }
 header .intro {
@@ -288,6 +293,11 @@ header .btn:hover a {
   margin: 5% 0%;
   padding-top: 5%;
 }
+@media (max-width:800px) {
+  .productContainer {
+    margin: 5% 5%;
+  }
+}
 @media (max-width:500px) {
   .productContainer {
     margin: 5% 5%;
@@ -297,6 +307,12 @@ header .btn:hover a {
   text-align: center;
   margin: 0% 10%;
   margin-bottom: 5%;
+}
+@media (max-width:800px) {
+  .productContainer .product {
+    margin: 0% 5%;
+    margin-bottom: 5%;
+  }
 }
 @media (max-width:500px) {
   .productContainer .product {
@@ -346,6 +362,11 @@ header .btn:hover a {
   margin: 5% 0%;
   padding-top: 5%;
 }
+@media (max-width:800px) {
+  .teamContainer {
+    margin: 5% 5%;
+  }
+}
 @media (max-width:500px) {
   .teamContainer {
     margin: 5% 5%;
@@ -355,6 +376,12 @@ header .btn:hover a {
   text-align: center;
   margin: 0% 10%;
   margin-bottom: 5%;
+}
+@media (max-width:800px) {
+  .teamContainer .team {
+    margin: 0% 5%;
+    margin-bottom: 5%;
+  }
 }
 @media (max-width:500px) {
   .teamContainer .team {
@@ -423,6 +450,11 @@ header .btn:hover a {
   border-top: 2px solid #DCDCDC;
   margin: 5% 0%;
   padding-top: 5%;
+}
+@media (max-width:800px) {
+  .contactContainer {
+    margin: 5% 5%;
+  }
 }
 @media (max-width:500px) {
   .contactContainer {
